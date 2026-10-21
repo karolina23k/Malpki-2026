@@ -3,6 +3,8 @@ using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 public class enemy : MonoBehaviour
 {
+    [SerializeField] private int health = 1;
+
     [SerializeField] private float movespeed = 3f;
     private Rigidbody2D rb;
     private Transform checkpoint;
@@ -21,18 +23,27 @@ public class enemy : MonoBehaviour
        
         if (Vector2.Distance(checkpoint.position, transform.position) <= 0.1f)
         {
-            Debug.Log("Checkpoint reached" + index);
             index++;
             if(index >= EnemyMenager.main.checkpoints.Length)
             {
                 Destroy(gameObject);
             }
         }
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+
+        }
     }
     void FixedUpdate()
     {
         Vector2 direction = (checkpoint.position - transform.position).normalized;
-        transform.right = checkpoint.position - transform.position;
+     //  transform.right = checkpoint.position - transform.position;
         rb.linearVelocity = direction * movespeed;
+    }
+
+    public void damage(int damage)
+    {
+        health -= damage;
     }
 }
