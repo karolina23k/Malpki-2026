@@ -15,7 +15,7 @@ public class Tower : MonoBehaviour
     {
         if (target)
         {
-            transform.right = target.transform.position - transform.position;
+            
 
             if (cooldown >= fireRate)
             {
