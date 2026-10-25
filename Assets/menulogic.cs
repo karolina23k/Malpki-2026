@@ -5,6 +5,7 @@ public class menulogic : MonoBehaviour
 {
     public GameObject MapSelectPanel;
     public GameObject MainButtons;
+    public GameObject SettingsPanel;
 
     public void OpenMapSelectPanel()
     {
@@ -21,5 +22,17 @@ public class menulogic : MonoBehaviour
     public void LoadMap(string mapName)
     {
         SceneManager.LoadScene(mapName);
+    }
+
+    public void OpenSettings()
+    {
+        SettingsPanel.SetActive(true);
+        MainButtons.SetActive(false);
+    }
+
+    public void CloseSettings()
+    {
+        SettingsPanel.SetActive(false);
+        MainButtons.SetActive(true);
     }
 }
