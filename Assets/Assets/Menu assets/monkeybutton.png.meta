@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 856303f184c273a40837fa2a973a39e2
+guid: af488ca63340b634cb419fe62bdb0e31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7919234623497951576
-    second: settingsbutton_0
+      213: -5259532152233848222
+    second: monkeybutton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,11 +111,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: settingsbutton_0
+      name: monkeybutton_0
       rect:
         serializedVersion: 2
         x: 98
@@ -130,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a62e6d511a391290800000000000000
-      internalID: -7919234623497951576
+      spriteID: 2621b5daf536207b0800000000000000
+      internalID: -5259532152233848222
       vertices: []
       indices: 
       edges: []
@@ -150,7 +163,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      settingsbutton_0: -7919234623497951576
+      monkeybutton_0: -5259532152233848222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

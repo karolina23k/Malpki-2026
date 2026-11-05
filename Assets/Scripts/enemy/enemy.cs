@@ -19,6 +19,8 @@ public class enemy : MonoBehaviour
     }
     void Update()
     {
+        if (!EnemyMenager.main.isGameStarted) return;
+
         checkpoint = EnemyMenager.main.checkpoints[index];
        
         if (Vector2.Distance(checkpoint.position, transform.position) <= 0.1f)
@@ -37,6 +39,12 @@ public class enemy : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!EnemyMenager.main.isGameStarted)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+        
         Vector2 direction = (checkpoint.position - transform.position).normalized;
      //  transform.right = checkpoint.position - transform.position;
         rb.linearVelocity = direction * movespeed;

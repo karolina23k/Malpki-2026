@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 20f4785c302dd404d98c1d9ae571f41b
+guid: 4f962ea72e1194745beccd4447d75659
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5773292569276652723
-    second: balon-removebg-preview_0
+      213: 2571547069555752462
+    second: balon2-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,11 +98,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: balon-removebg-preview_0
+      name: balon2-removebg-preview_0
       rect:
         serializedVersion: 2
         x: 26
@@ -117,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d43ecd71ff421efa0800000000000000
-      internalID: -5773292569276652723
+      spriteID: e0e31146f68ffa320800000000000000
+      internalID: 2571547069555752462
       vertices: []
       indices: 
       edges: []
@@ -127,7 +153,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +163,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      balon-removebg-preview_0: -5773292569276652723
+      balon2-removebg-preview_0: 2571547069555752462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

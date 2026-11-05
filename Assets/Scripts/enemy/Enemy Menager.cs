@@ -7,6 +7,7 @@ public class EnemyMenager : MonoBehaviour
 
     public Transform[] checkpoints;
 
+    public bool isGameStarted = false;
 
 
     void Awake()
@@ -14,4 +15,8 @@ public class EnemyMenager : MonoBehaviour
         main = this;
     }
 
+    public void StartGame()
+    {
+        isGameStarted = true;
+    }
 }

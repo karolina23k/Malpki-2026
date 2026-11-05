@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd19c6c9be0269e4792d8a1dec55d2b5
+guid: 8ee37f9a2d5576b49af0c432a1381398
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3528723890981641967
-    second: jungle2_0
+      213: -8608890617205840645
+    second: monke-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,6 +99,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -115,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jungle2_0
+      name: monke-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 626
-        height: 417
+        x: 31
+        y: 20
+        width: 98
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fee1560deab88f030800000000000000
-      internalID: 3528723890981641967
+      spriteID: bf4a0437893178880800000000000000
+      internalID: -8608890617205840645
       vertices: []
       indices: 
       edges: []
@@ -150,7 +163,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jungle2_0: 3528723890981641967
+      monke-removebg-preview_0: -8608890617205840645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
