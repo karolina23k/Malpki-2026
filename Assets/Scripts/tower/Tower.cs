@@ -13,6 +13,8 @@ public class Tower : MonoBehaviour
 
     private void Update()
     {
+        if (!EnemyMenager.main.isGameStarted) return;
+        
         if (target)
         {
             

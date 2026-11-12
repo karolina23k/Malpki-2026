@@ -32,6 +32,8 @@ public class towerRange : MonoBehaviour
     }
     void Update()
     {
+        if (!EnemyMenager.main.isGameStarted) return;
+        
         if (targets.Count > 0)
         {
             Tower.target = targets[0];
