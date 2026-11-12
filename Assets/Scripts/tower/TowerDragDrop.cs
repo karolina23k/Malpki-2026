@@ -6,6 +6,7 @@ public class TowerDragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public GameObject towerPrefab;
     public LayerMask cantBuildLayer;
     public string placedTowerLayerName = "tower";
+    public string monkeyName;
 
     private GameObject draggedTower;
     private Tower towerScript;
@@ -15,6 +16,8 @@ public class TowerDragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
         mousePos.z = 0;
         draggedTower = Instantiate(towerPrefab, mousePos, Quaternion.identity);
+
+        draggedTower.name = string.IsNullOrEmpty(monkeyName) ? towerPrefab.name : monkeyName;
         
         SetLayerRecursively(draggedTower, LayerMask.NameToLayer("Default"));
         
