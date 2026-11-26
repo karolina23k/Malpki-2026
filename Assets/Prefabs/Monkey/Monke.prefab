@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 872297913059197886}
   - component: {fileID: 3026225193635622833}
   - component: {fileID: 6348078733795815911}
+  - component: {fileID: -6475280285801295508}
   m_Layer: 8
   m_Name: Monke
   m_TagString: Untagged
@@ -28,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 6461745923074355217}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.19, y: 0.34, z: 0}
-  m_LocalScale: {x: 0.69, y: 0.69, z: 0.69}
+  m_LocalPosition: {x: -1.755, y: 0.182, z: 0}
+  m_LocalScale: {x: 0.278967, y: 0.231978, z: 0.69}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1107565416409721373}
@@ -44,7 +45,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6461745923074355217}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+  m_Sprite: {fileID: -6406394822823039055, guid: c96c24778a8b9a54f8e6bbc42b5d2c2e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,7 +111,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Tower
   range: 8
   damage: 1
-  fireRate: 1
+  fireRate: 0.5
+  upgrade1Name: "Zwi\u0119ksz pr\u0119dko\u015B\u0107"
+  upgrade2Name: "Zwi\u0119ksz zasi\u0119g"
+  icon: {fileID: -9061437271960763654, guid: c3df96100a8673541aa80114d82fa3ab, type: 3}
   target: {fileID: 0}
 --- !u!58 &6348078733795815911
 CircleCollider2D:
@@ -148,6 +152,27 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.0069394493, y: -0.014901766}
   m_Radius: 0.66566145
+--- !u!114 &-6475280285801295508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6461745923074355217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d637af056d1433f4695e72a6b346c89c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoberDirection
+  sprites:
+  - {fileID: -6406394822823039055, guid: c96c24778a8b9a54f8e6bbc42b5d2c2e, type: 3}
+  - {fileID: -5706201757345210139, guid: c93b4a80249bb0548adbc9148a672ea8, type: 3}
+  - {fileID: 6054214405365975936, guid: 9697336f645a19943b811cdd21ae205e, type: 3}
+  - {fileID: 7045086714344763585, guid: b50807eda5900a0499215c3c728b8eab, type: 3}
+  - {fileID: -5149824339746732222, guid: 25383856133b17e40b294fbc8a4ca81f, type: 3}
+  - {fileID: 7365643482700501258, guid: 65061880a10e42f40bd688e34f863909, type: 3}
+  - {fileID: -1902823355710142383, guid: d935418bbaaa06346963fd739075aeab, type: 3}
+  - {fileID: -3099625738947232041, guid: a2e1c43a03f7c314a89a929d40e4725d, type: 3}
 --- !u!1 &8302317420793108173
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +254,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.8, g: 0.8, b: 0.8, a: 0.28235295}
@@ -301,6 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107565416409721373}
   - component: {fileID: 3983584261020562902}
+  - component: {fileID: 2041741439133452621}
   m_Layer: 0
   m_Name: monke
   m_TagString: Untagged
@@ -331,7 +357,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8683140041767924161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -383,3 +409,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2041741439133452621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683140041767924161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d637af056d1433f4695e72a6b346c89c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoberDirection
+  sprites:
+  - {fileID: -6406394822823039055, guid: c96c24778a8b9a54f8e6bbc42b5d2c2e, type: 3}
+  - {fileID: -5706201757345210139, guid: c93b4a80249bb0548adbc9148a672ea8, type: 3}
+  - {fileID: 6054214405365975936, guid: 9697336f645a19943b811cdd21ae205e, type: 3}
+  - {fileID: 7045086714344763585, guid: b50807eda5900a0499215c3c728b8eab, type: 3}
+  - {fileID: -5149824339746732222, guid: 25383856133b17e40b294fbc8a4ca81f, type: 3}
+  - {fileID: 7365643482700501258, guid: 65061880a10e42f40bd688e34f863909, type: 3}
+  - {fileID: -1902823355710142383, guid: d935418bbaaa06346963fd739075aeab, type: 3}
+  - {fileID: -3099625738947232041, guid: a2e1c43a03f7c314a89a929d40e4725d, type: 3}

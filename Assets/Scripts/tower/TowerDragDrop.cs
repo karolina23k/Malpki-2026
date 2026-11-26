@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class TowerDragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -7,6 +8,8 @@ public class TowerDragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public LayerMask cantBuildLayer;
     public string placedTowerLayerName = "tower";
     public string monkeyName;
+    public string upgrade1Name;
+    public string upgrade2Name;
 
     private GameObject draggedTower;
     private Tower towerScript;
@@ -18,11 +21,18 @@ public class TowerDragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         draggedTower = Instantiate(towerPrefab, mousePos, Quaternion.identity);
 
         draggedTower.name = string.IsNullOrEmpty(monkeyName) ? towerPrefab.name : monkeyName;
-        
+
         SetLayerRecursively(draggedTower, LayerMask.NameToLayer("Default"));
-        
+
         towerScript = draggedTower.GetComponent<Tower>();
-        if (towerScript != null) towerScript.enabled = false; 
+        if (towerScript != null)
+        {
+            if (!string.IsNullOrEmpty(upgrade1Name)) towerScript.upgrade1Name = upgrade1Name;
+            if (!string.IsNullOrEmpty(upgrade2Name)) towerScript.upgrade2Name = upgrade2Name;
+            Image buttonImage = GetComponent<Image>();
+            if (buttonImage != null) towerScript.icon = buttonImage.sprite;
+            towerScript.enabled = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -55,7 +65,7 @@ public class TowerDragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
                 if (towerScript != null) towerScript.enabled = true;
             }
-            
+
             draggedTower = null;
         }
     }
