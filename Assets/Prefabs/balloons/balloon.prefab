@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 1853628002787140197}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05384615, y: -0.13285714, z: 0}
-  m_LocalScale: {x: 0.8076922, y: 0.59999996, z: 0}
+  m_LocalPosition: {x: 0.055, y: -0.099, z: 0}
+  m_LocalScale: {x: 0.5518961, y: 0.40482, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1725343678035838102}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 20f4785c302dd404d98c1d9ae571f41b, type: 3}
+  m_Sprite: {fileID: 1339894226618245718, guid: 0761dd543d331d146a68bde05bd95656, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6321129615de00469446a62011d490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy
+  health: 1
   movespeed: 3
 --- !u!58 &7803015833801870493
 CircleCollider2D:
